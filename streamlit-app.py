@@ -1,3 +1,5 @@
+import subprocess
+subprocess.run(["pip", "install", "-r", "requirements.txt"], check=True)
 import streamlit as st
 import numpy as np
 import nibabel as nib
