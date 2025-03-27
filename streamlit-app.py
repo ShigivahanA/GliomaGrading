@@ -19,8 +19,8 @@ if gpus:
     for gpu in gpus:
         tf.config.experimental.set_memory_growth(gpu, True)
 
-model_path = "D:/model/ensemble_model_B1.pkl"
-scaler_path = "D:/model/scaler_B1.pkl"
+model_path = "ensemble_model_B1.pkl"
+scaler_path = "scaler_B1.pkl"
 
 with open(model_path, "rb") as model_file:
     ensemble_clf = pickle.load(model_file)
